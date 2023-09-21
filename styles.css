@@ -455,21 +455,21 @@ a{
   }
 
   #project1{
-    background-image: url(./images/projects/DeliveryWebsite.png);
+    background-image: url(./DeliveryWebsite.png);
     right: -1%;
   }
 
   #project2{
     left: 5%;
-    background-image: url(./images/projects/Project2.png);
+    background-image: url(./Project2.png);
   }
   #project3{
-    background-image: url(./images/projects/Project3.png);
+    background-image: url(./Project3.png);
     right: -1%;
   }
   #project4{
     left: 5%;
-    background-image: url(./images/projects/Project4.png);
+    background-image: url(./Project4.png);
   }
 
   @media (max-width:1000px) {
