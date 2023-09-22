@@ -12,7 +12,7 @@
 }
 
 #wrapper{
-    height:895vh;
+    height:907vh;
     overflow-y:auto;
     overflow-x: hidden;
 }
@@ -91,7 +91,7 @@ a{
     color:rgb(231,231,231);
     
     bottom: -16%;
-    left: -5%;
+    left: -2%;
     font-weight: bold;
     transition: all 3s;
 }
@@ -108,6 +108,10 @@ a{
     font-size: 35px;
     color: #343d68;
     font-weight: 500;
+}
+#hey{
+  font-weight: bold;
+  font-size: 45px;
 }
 
 .role{
@@ -550,6 +554,7 @@ a{
   position:relative;
   gap:2rem;
   justify-content: center;
+  margin-top: 150px;
 }
 
 .skill-fade-text{
@@ -557,8 +562,8 @@ a{
   font-size:15em;
   font-style:bold;
   color:rgb(231,231,231);
-  bottom:-34.5%;
-  right:-10%;
+  bottom:-30.5%;
+  right:7%;
   user-select:none;
   overflow-y:hidden;
 }
@@ -580,7 +585,7 @@ a{
 }
 
 .skills-logo{
-  width:90px;
+  width:80px;
   transition:all 0.5s;
 }
 
@@ -655,6 +660,7 @@ a{
   padding: 0 2rem;
   font-size: 18px;
   border: none;
+  
   border-radius: 5px;
   box-shadow: 2px 2px 10px #1f1f1f;
   background: #ffffff97;
@@ -732,8 +738,448 @@ footer {
 .iconContainer{
   display: flex;
   gap: 1rem;
+  margin-right: 100px;
+}
+/* ----------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------mobile ----------------------------- */
+
+/* CSS for smartphones */
+@media screen and (max-width: 767px) {
+  *{
+    margin:0;
+    padding:0;
+    /* box-sizing:border-box; */
+    font-family: "Be Vietnam Pro", sans-serif;
+    scroll-behavior: smooth;
+  }
+  :root {
+    --bgOrange: #e84949;
+  }
+  
+  #wrapper {
+    height: auto;
 }
 
 
-/* ---------------mobile ----------------------------- */
+  /* -------------------------------------------navbar -------------------------------------------*/
+  .container {
+    width: 100%; 
+    padding: 0 10px; 
+}
 
+.navbar {
+    flex-direction: column; 
+    padding-top: 0.5rem; 
+}
+
+.logo-container {
+    margin-bottom: 10px;
+}
+
+.logo-text {
+    margin-left: -1.5rem;
+    text-align: center; 
+    font-size:28px;
+}
+
+.nav-items {
+    flex-direction: row; 
+    gap: 3rem; 
+    padding: 0;
+}
+
+.nav-items div {
+    text-align: center; 
+    font-size:20px;
+    font-weight:500;
+    cursor:pointer;
+
+}
+.nav-items div a{
+  color:black;
+  /* transition: all 5s ease; */
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.nav-items div:hover{
+  transition:0.8s;
+  font-weight: bold;
+}
+
+/* -------------------------hero section------------------------------ */
+    
+
+.hero-section{
+  position:relative;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 5rem;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  padding-bottom: 5rem;
+}
+
+.faded-text{
+  position:absolute;
+  user-select:none;
+  font-size: 4em;
+  color:rgb(231,231,231);
+  
+  bottom: -5%;
+  left: -1%;
+  font-weight: bold;
+  transition: all 4s;
+  
+}
+
+.hero-section-left{
+  /* width:100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  gap: 2rem;
+}
+.hero-section-heading{
+  font-size: 25px;
+  color: #343d68;
+  font-weight: 900;
+  padding-left: 20px;
+
+}
+#hey{
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.role{
+  color: #4e45d5;
+  font-weight: 800;
+}
+
+.hero-section-sub-heading{
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.hero-section-description{
+  margin-top: 0.3rem;
+  width: 70%;
+  font-weight: 500;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.btn{
+  display: flex;
+ 
+  
+}
+#btn2{
+  margin-left: 50px;
+}
+
+.hero-section-right{
+  position:relative;
+  size: 100px;
+  margin-bottom: 0px;
+}
+
+.user-image{
+  padding:1rem;
+  filter:grayscale(1);
+  transition:all 1s;
+  animation: scaleImage 5s linear infinite;
+  margin-right: 30px;
+  margin-top: 2px;
+}
+.user-image img{
+  z-index:-7;
+}
+.project-section{
+  background-color: rgb(231,231,231);
+  margin-top:0rem;
+}
+.project-container{
+  max-width: 1000px;
+  margin:0 auto;
+  padding:3rem 0;
+
+  display:flex;
+  flex-direction:column;
+  gap:40px;
+}
+
+.project-card{
+  width:90%;
+  height:200px;
+  width: 300px;
+  background-image: url(./images/projects/Project1.png);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  position:relative;
+  box-shadow:0px 0px 30px #1f1f1f;
+  
+
+}
+
+.project-content{
+  position:absolute;
+  display:flex;
+  flex-direction:column;
+  color:white;
+  padding:2em;
+  bottom:10%;
+  z-index:5;
+  gap:1em;
+  transition:all 0.4s;
+  margin-top: 1px;
+}
+
+.project-skill{
+  width:20px;
+ 
+}
+.project-heading{
+  font-size:30px;
+  font-weight: bold;
+  line-height:3rem;
+}
+
+.project-subHeading{
+  width:70%;
+  font-size:8px;
+  font-style: italic;
+}
+
+#project1{
+  background-image: url(./images/projects/DeliveryWebsite.png);
+  right: -1%;
+}
+
+#project2{
+  left: 22%;
+  background-image: url(./images/projects/Project2.png);
+}
+#project3{
+  background-image: url(./images/projects/Project3.png);
+  right: -1%;
+}
+#project4{
+  left: 22%;
+  background-image: url(./images/projects/Project4.png);
+}
+.project-number-right{
+  right: -10px;
+  /* left: 50%; */
+  top: -25px;
+}
+
+.project-number-left{
+  left:-10px;
+  top:-15px;
+}
+
+/* -------------------------------skill---------------------------------------- */
+.skills-container{
+  position:relative;
+  display:flex;
+  padding:1rem;
+  margin:5rem auto;
+  gap:15px;
+  
+  
+}
+.skill-container-left{
+  width:50%;
+  display:flex;
+  flex-direction:column;
+ 
+}
+.skill-container-right{
+  display:flex;
+  flex-wrap:wrap;
+  width:50%;
+  position:relative;
+  gap:0.1rem;
+  justify-content: left;
+  margin-right: 20px;
+  margin-top: 150px;
+}
+.skill-fade-text{
+  position:absolute;
+  font-size:5em;
+  font-style:bold;
+  color:rgb(231,231,231);
+  bottom:-14.5%;
+  right:10%;
+  user-select:none;
+  overflow-y:hidden;
+}
+.blob-style{
+  position:absolute;
+  top:50%;
+  left:60%;
+  z-index:-9;
+  transform:translate(-40%, -50%);
+  animation: blobAnimate 3s linear infinite;
+}
+@keyframes blobAnimate {
+  50%{
+    top:54%;
+    left:46%;
+  }
+}
+
+.skills-logo{
+  width:40px;
+  display: flex;
+  flex-direction: row;
+  transition:all 0.5s;
+ 
+  /* margin-right: 100px; */
+  
+}
+
+
+
+.skill-heading{
+  font-size: 40px;
+  font-style: bold;
+  color: var(--bgOrange);
+  line-height: 10px;
+  text-align: left;
+  
+}
+#head{
+  font-size: 35px;
+  line-height: 40px;
+}
+.caps{
+  font-size:40px;
+}
+
+.skill-subHeading{
+  margin-top: 0.5rem;
+  width:90%;
+  text-align: justify;
+  font-size: 0.7rem;
+}
+
+.skill-subHeading p{
+  margin:25px 0;
+}
+/* ------------------------------contanct me------------------------------- */
+.contactMeSection {
+  width: 100%;
+  background-color: #e7e7e7;
+  margin-top: 80px;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+}
+.container h2 {
+  font-size: 3em;
+  padding-top: 2rem;
+  text-align: center;
+  color: #e84949;
+}
+
+.container h3 {
+  font-size: 1em;
+  text-align: center;
+  color: #343d68aa;
+}
+.contactUsForm {
+  width: 60%;
+  display: flex;
+  margin-top: 25px;
+  margin-left: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.contactUsForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+.formField {
+  width: 100%;
+  height: 32px;
+  padding: 0 2rem;
+  font-size: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px #1f1f1f;
+  background: #ffffff97;
+  font-weight: 500;
+}
+.formBtn .btn {
+  transition: 0.5s;
+  border: none;
+  font-size: 0.5rem;
+  margin: 1.6rem 0;
+  
+}
+
+.formBtn .btn i {
+  padding: 0 0.3rem;
+  font-size: 0.5rem;
+}
+
+/* ----------------------------footer ------------------------------------------*/
+footer {
+  flex-direction: column; /* Stack children vertically on mobile screens */
+
+  padding: 3rem;
+  padding-left: 0px;
+  padding-top: 20px;
+}
+
+.footerFadedText {
+  left: 30%; /* Adjust left position for mobile */
+  bottom: 0;
+  transform: translateX(0); /* Reset horizontal centering */
+  font-size: 3rem;
+}
+
+
+.linkContainer{
+  flex-direction: row;
+  justify-content: left;
+  padding: 0px;
+}
+.linkContainer {
+  display: flex;
+  gap: 0.5em;
+}
+.iconContainer{
+  display: flex;
+  gap: 1rem;
+  margin-left: 60px;
+  
+}
+.iconContainer a i {
+  font-size: 20px; /* Adjust the mobile icon size as needed */
+}
+.linkContainer div a {
+  font-size:10px; /* Adjust the font size for mobile screens */
+}
+
+
+
+
+
+
+
+}
